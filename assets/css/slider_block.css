@@ -1,0 +1,69 @@
+.flex_slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0;
+  color: snow;
+}
+
+.item{
+  height: 100vh;
+  background: #ccc;
+  
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  background-size: cover;
+  transition: all 0.4s;
+}
+
+.item:hover{
+  flex-basis: 50%;
+  transition: all 0.4s;
+}
+
+.item span{
+  font-size: 2rem;
+  text-shadow: 0 0 10px #000;
+
+  text-transform: uppercase;
+}
+
+.item1{
+  background: url('https://i.artfile.ru/2560x1600_684915_[www.ArtFile.ru].jpg') no-repeat center center;
+}
+.item2{
+  background: url('https://images.ctfassets.net/7lhcm73ukv5p/69J5U0VuDYYASeG2y4iMko/b2568a1f4c5fc4edcd6b0be1987f3aa4/UNION_DAY.jpg') no-repeat center center;
+}
+.item3{
+  background: url('https://web.ccpgamescdn.com/newssystem/media/67586/1/SPACE_POLICE.jpg') no-repeat center center;
+
+}
+.item4{
+  background: url('https://images.ctfassets.net/1gqwxa4vbed9/4NFVs57VOUGcXLbLWLrBce/5926d3ce300473a006efc51e2e470a9f/hero-image-3.jpg') no-repeat center center;
+
+}
+
+@media (max-width: 1060px){
+  .item span{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 640px){
+  .flex_slider{
+    flex-flow: column;
+    height: 100vh;
+  }
+  .item{
+    width: 100%;
+  }
+}
+@media (max-width: 200px){
+  .item span{
+    font-size: 1rem;
+  }
+}
